@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX/jQuery Test</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.7.0/dist/htmx.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="overflow-hidden">
+    <div class="text-center mt-10 pb-5">
+        <h1 class="text-3xl mb-6">HTMX/jQuery Test</h1>
+
+        <label for="toggle" class="flex items-center cursor-pointer justify-center">
+            <span class="mr-3 text-gray-900 font-medium shadow-sm">Day Mode</span>
+
+            <div class="relative">
+                <input id="toggle" type="checkbox" hx-get="https://mcnac.xyz/huh/what/lightmodes.html"
+                    hx-trigger="click" class="hidden">
+                <div class="toggle__line w-10 h-6 bg-gray-400 rounded-full shadow-inner"></div>
+                <div id="dot" class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"></div>
+            </div>
+
+            <span class="ml-3 text-white font-medium shadow-sm">Night Mode</span>
+        </label>
+    </div>
+    <div class="flex items-center justify-center h-screen container mx-auto">
+        <img id="vista"
+            src="https://images.pexels.com/photos/2792070/pexels-photo-2792070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Day Image" class="object-cover w-full h-full">
+    </div>
+</body>
+
+</html>
