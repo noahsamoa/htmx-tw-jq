@@ -1,0 +1,32 @@
+<script>
+    if (typeof nightModeScriptLoaded === 'undefined') {
+        var nightModeScriptLoaded = true;
+
+        $(document).ready(function () {
+            var isNightMode = true;
+
+            function updateMode() {
+                var bodyClass = isNightMode ? 'bg-gray-900' : 'bg-white';
+                var textClass = isNightMode ? 'text-white' : 'text-black';
+                var directionClass = isNightMode ? 'right-0' : 'left-0';
+                var newText = isNightMode ? 'It is nighttime' : 'It is daytime';
+                var imageUrl = isNightMode ? 'https://images.pexels.com/photos/2085998/pexels-photo-2085998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' : 'https://images.pexels.com/photos/2792070/pexels-photo-2792070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+
+                $('body').removeClass('bg-white bg-gray-900').addClass(bodyClass);
+                $('h1').removeClass('text-black text-white').addClass(textClass).html(newText);
+                $('#dot').removeClass('left-0 right-0').addClass(directionClass);
+                $('#vista').attr('src', imageUrl);
+            }
+
+            function toggleMode() {
+                isNightMode = !isNightMode;
+                updateMode();
+            }
+
+            updateMode();
+            $('#toggle').click(function () {
+                toggleMode();
+            });
+        });
+    }
+</script>
