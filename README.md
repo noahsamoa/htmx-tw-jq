@@ -1,4 +1,21 @@
-# htmx-tw-jq
+# THQ Stack Example
+
+## What it is:
+
+THQ is short for (T)ailwind, (H)TMX, amd j(Q)uery
+
+This project is a simple HTMX/jQuery test that demonstrates toggling between day and night modes using HTMX and jQuery. The project consists of two HTML files. 
+
+## How?
+
+- Clone and run on an http server. 
+The libraries are loaded via CDN, so it's mostly static. 
 
 ## What's the point?
-- In celebration of jQuery4, let's send jQuery over HTMX to change Tailwind classes (loaded from CDN).  
+- jQuery4 is soon to release, so let's bring it back with modern web tools
+- HTMX is fast and easy to read
+- Tailwind is just Bootstrap++, meaning we have the perfect 2010 pseudostack: .  
+
+### Notes
+
+- The empty tailwind.config.js is there so you VSCode cats can use you IntelliSense extension out-of-the-box.  
