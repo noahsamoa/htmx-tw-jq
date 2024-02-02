@@ -14,7 +14,7 @@ The libraries are loaded via CDN, so it's mostly static.
 ## What's the point?
 - jQuery4 is soon to release, so let's bring it back with modern web tools
 - HTMX is fast and easy to read
-- Tailwind is just Bootstrap++, meaning we have the perfect 2010 pseudostack: .  
+- Tailwind is just Bootstrap++, meaning we have the perfect 2010 pseudostack!  
 
 ### Notes
 
