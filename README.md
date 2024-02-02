@@ -18,4 +18,4 @@ The libraries are loaded via CDN, so it's mostly static.
 
 ### Notes
 
-- The empty tailwind.config.js is there so you VSCode cats can use you IntelliSense extension out-of-the-box.  
+- The empty tailwind.config.js is there so you VSCode cats can use your IntelliSense extension out-of-the-box.  
